@@ -64,5 +64,6 @@ static ssize_t led_read(struct file *puntero_file, char *buffer_user, size_t tam
 static ssize_t led_write(struct file *puntero_file, const char *buffer_user, size_t tamano, loff_t *puntero_offset)
 {
 	unsigned long prueba;
+	printk(KERN_INFO "led_SIE: escribiendo en el dispositivo \n");
 
 }
